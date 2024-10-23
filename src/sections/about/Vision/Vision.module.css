@@ -1,0 +1,51 @@
+.visionWrapper {
+    padding: 100px 0;
+    margin-bottom: 150px;
+}
+
+.vissionTile {
+    position: relative;
+}
+
+.vissionTile:nth-child(even)::before {
+    background: #272829;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    content: '';
+    left: -45px;
+}
+
+.vissionTile:nth-child(even)::after {
+    position: absolute;
+    content: url(../../../images/about/line.svg);
+    left: -45px;
+    left: -35px;
+    top: 0;
+}
+
+.vissionTile:last-child::after {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .vissionTile {
+        margin-bottom: 30px;
+    }
+
+    .vissionTile:nth-child(even)::after {
+        display: none;
+    }
+
+    .vissionTile:nth-child(even)::before {
+        display: none;
+    }
+
+    .VISONCARD h4,
+    .VISONCARD p {
+        text-align: start;
+    }
+ 
+    
+}

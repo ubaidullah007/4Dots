@@ -1,0 +1,15 @@
+.ResearhCard{
+    padding: 24px !important;
+}
+
+.ResearhCard .researchImage{
+    overflow: hidden;
+    border-radius: 20px;
+}
+.ResearhCard .researchImage img{
+    transition: all 1s ease;
+    overflow: hidden;
+}
+.ResearhCard .researchImage img:hover{
+    transform: scale(1.2);
+}

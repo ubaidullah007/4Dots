@@ -1,0 +1,134 @@
+.NavDropDownBtn:hover svg {
+    transform: rotate(180deg);
+    transition: .5s ease-in-out;
+}
+
+.NavDropDownBtn:hover svg path {
+    stroke: #272829;
+}
+
+@media (max-width:768px) {
+    .NavDropDownBtn svg path {
+        stroke: #fff;
+    }
+
+    .NavDropDownBtn:hover svg {
+        transform: none;
+    }
+
+    .NavDropDownBtn:hover svg path {
+        stroke: #fff;
+    }
+    .mobileDropDownmenu .NavDropDownBtnOpenState svg {
+        transform: rotate(180deg) !important;
+        transition: .3s ease-in-out;
+    }
+}
+
+/* mobile menu */
+#navIcon {
+    width: 37px;
+    height: 37px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#navIcon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #3d3935;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+
+#navIcon span:nth-child(1) {
+    top: 10px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#navIcon span:nth-child(2) {
+    top: 20px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#navIcon span:nth-child(3) {
+    top: 30px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#navIcon.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 3px;
+    left: 5px;
+}
+
+#navIcon.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+#navIcon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 29px;
+    left: 5px;
+}
+
+.mobileMenu {
+    position: absolute;
+    z-index: 2;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: fit-content;
+    top: 86px;
+    animation-duration: .5s;
+    animation-name: delaySlide;
+}
+
+@keyframes delaySlide {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

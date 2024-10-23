@@ -1,0 +1,47 @@
+.serviceWrapper {
+    padding: 80px 0;
+}
+
+.imageSection {
+    position: relative;
+}
+
+
+
+.absoluteImage {
+    position: absolute;
+    right: 0;
+    top: -50px;
+}
+
+.imageSection::before {
+    content: '';
+    width: 42px;
+    height: 42px;
+    background: #272829;
+    position: absolute;
+    border-radius: 50%;
+    left: 58%;
+    top: -35px;
+}
+
+.imageSection::after {
+    content: '';
+    width: 37px;
+    height: 30px;
+    background: #272829;
+    position: absolute;
+    right: 0;
+    top: 31.5%;
+    border-bottom-right-radius: 50px;
+}
+
+@media (max-width:767px){
+    .imageSection {
+        margin-top: 30px;
+    }
+    .serviceWrapper {
+        padding: 50px 0;
+    }
+  
+}

@@ -1,0 +1,48 @@
+.arrowBtn {
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 29px;
+
+}
+
+.arrowBtn:hover svg {
+    transform: translateX(0.5rem);
+    transition: .5s ease-in-out;
+}
+
+
+.JobsCard:hover {
+    background: #272829;
+    box-shadow: -10px 30px 70px 0px #4C40F74D;
+    color: #fff;
+}
+
+.JobsCard:hover p {
+    color: #fff !important;
+}
+
+ .jobDes {
+    width: 100%;
+    line-height: 1.2em;
+    height: 3.6em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+.JobsCard:hover div {
+    color: #fff !important;
+}
+
+.JobsCard:hover svg path {
+    fill: #fff !important;
+}
+
+.jobFormWrapper{
+    box-shadow: -10px 30px 70px 0px #DBDEE166;
+padding: 24px;
+}

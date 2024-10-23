@@ -1,0 +1,63 @@
+.industryWrapper {
+  background: black;
+  padding: 80px 0;
+}
+
+.CardsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.CardsGrid .industryCard {
+  flex-basis: calc(33.33% - 30px);
+  margin-bottom: 60px;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.CardsGrid .industryCard:hover {
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 0px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.industryCard h5 {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.industryCard:nth-child(7),
+.industryCard:nth-child(12) {
+  background-color: transparent;
+  color: transparent;
+  box-shadow: none;
+}
+
+@media (max-width: 990px) {
+  .industryCard:nth-child(7),
+  .industryCard:nth-child(12) {
+    display: none;
+  }
+
+  .CardsGrid .industryCard {
+    flex-basis: calc(20% - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .CardsGrid .industryCard {
+    flex-basis: calc(33% - 15px);
+  }
+  .industryWrapper {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .CardsGrid .industryCard {
+    flex-basis: calc(50% - 15px);
+  }
+}

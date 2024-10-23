@@ -1,0 +1,17 @@
+.blogCard {
+    padding: 24px !important;
+}
+
+.blogCard .blogImage {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.blogCard .blogImage img {
+    transition: all 1s ease;
+    overflow: hidden;
+}
+
+.blogCard .blogImage img:hover {
+    transform: scale(1.2);
+}

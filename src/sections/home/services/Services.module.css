@@ -1,0 +1,40 @@
+.serviceCard {
+  position: relative;
+  padding-bottom: 90px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* .serviceCard:hover {
+    background: #272829;
+    box-shadow: -10px 30px 70px 0px #4C40F74D;
+    color: #fff;
+}
+
+.serviceCard:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.serviceCard:hover ul li span {
+    color: #fff !important;
+} */
+
+.arrowBtn {
+  background: #f3f4f6;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 40px;
+
+}
+
+.arrowBtn:hover >  svg path,
+.arrowBtn:hover{
+  background: #272829;
+  transition: .3s ease-in-out;
+  fill: white; 
+  
+}

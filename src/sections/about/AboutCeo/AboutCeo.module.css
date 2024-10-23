@@ -1,0 +1,80 @@
+.blueBgRoundedLeft {
+    position: relative;
+    margin-top: 80px;
+}
+
+.blueBgRoundedLeft::before {
+    content: '';
+    background: #272829;
+    width: 85.5%;
+    height: 301px;
+    right: 0;
+    border-radius: 20px 0 0 20px;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+}
+
+.focusedBoyImage {
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+.blueBgRoundedRight {
+    position: relative;
+    margin-top: 80px;
+}
+
+.blueBgRoundedRight::before {
+    content: '';
+    background: #272829;
+    width: 85.5%;
+    height: 301px;
+    left: 0;
+    border-radius: 0px 20px 20px 0;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+}
+
+.roadMapWrapper {
+    background: #272829;
+    padding: 40px 80px 191px 80px;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 460px;
+}
+
+.roadMapWrapper h1 {
+    color: #fff !important;
+}
+
+.roadMapWrapper img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+}
+
+.roadMapWrapper::before {
+    content: '';
+    width: 34px;
+    height: 34px;
+    background: #272829;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -200px;
+    left: 13%;
+}
+
+.roadMapWrapper::after {
+    content: '';
+    width: 34px;
+    height: 34px;
+    background: #272829;
+    border-bottom-right-radius: 100%;
+    position: absolute;
+    bottom: -15%;
+    right: 10%;
+}

@@ -1,0 +1,52 @@
+.accordionWrapper {
+    padding: 32px;
+    border-radius: 20px;
+    margin-bottom: 32px;
+    background: #fff;
+}
+
+.accordionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all .500ms ease-in-out;
+}
+
+.accordionHeader:hover {
+    color: #272829;
+    transition: all .500ms ease-in-out;
+}
+
+.accordionHeader:hover svg path {
+    fill: #272829;
+}
+
+.accordionContent {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: all 500ms;
+}
+
+.accordionContent p {
+    overflow: hidden;
+}
+
+.accordionContent.accordionOpenn {
+    grid-template-rows: 1fr;
+    padding-top: 28px;
+}
+
+.borderTop {
+    border-top: 1px solid #D8D8D8;
+    padding-top: 28px;
+}
+
+.border {
+    border: 1px solid #D8D8D8;
+    transition: all .500ms ease-in-out;
+}
+
+.shadow {
+    box-shadow: -10px 30px 70px 0px #DBDEE166;
+}

@@ -1,0 +1,7 @@
+.theoryWrapper {
+  background-image: url(../../../images/theoryBg.png);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}

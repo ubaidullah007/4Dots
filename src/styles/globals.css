@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,700;0,900;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+
+select {
+  -webkit-appearance: none; /* removes expand icon in older Chrome versions */
+  -moz-appearance: none; /* removes expand icon in older Firefox versions */
+  appearance: none; /* removes expand icon */
+}
+
+p{
+  font-size: 16px !important;
+}
+/* main banner heading */
+
+.main-heading {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -0.4000000059604645px;
+  text-align: left;
+}
+
+/* swiper custom styles */
+.testimonials-slider .swiper {
+  padding: 60px 54px;
+}
+
+
+
+@media (max-width: 767px) {
+  .main-heading {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: center;
+  }
+
+  .testimonials-slider .swiper .swiper-button-next {
+    left: 51% !important;
+  }
+
+  .testimonials-slider .swiper .swiper-button-prev {
+    left: 43% !important;
+    bottom: -26px !important;
+  }
+}
+
+.testimonials-slider .swiper .swiper-button-next {
+  background: url(../images/arrowRightBlack.svg);
+  filter: invert(30%) sepia(89%) saturate(7323%) hue-rotate(248deg)
+    brightness(105%) contrast(103%);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: initial;
+  z-index: 11;
+  bottom: -25px;
+  left: 35%;
+}
+
+.testimonials-slider .swiper .swiper-button-next::after {
+  display: none;
+}
+
+.testimonials-slider .swiper .swiper-button-prev {
+  background: url(../images/arrowLeftBack.svg);
+  filter: invert(30%) sepia(89%) saturate(7323%) hue-rotate(248deg)
+    brightness(105%) contrast(103%);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: initial;
+  z-index: 11;
+  bottom: 0;
+  left: 32%;
+  bottom: -26px;
+}
+
+.testimonials-slider .swiper .swiper-button-next.swiper-button-disabled {
+  background: url(../images/arrowRightBlack.svg);
+  background-repeat: no-repeat;
+  filter: invert(0%) sepia(6%) saturate(24%) hue-rotate(268deg) brightness(97%)
+    contrast(107%);
+}
+
+.testimonials-slider .swiper .swiper-button-prev.swiper-button-disabled {
+  background: url(../images/arrowLeftBack.svg);
+  filter: invert(0%) sepia(6%) saturate(24%) hue-rotate(268deg) brightness(97%)
+    contrast(107%);
+  background-repeat: no-repeat;
+}
+
+.testimonials-slider .swiper .swiper-button-prev.swiper-button-disabled,
+.testimonials-slider .swiper .swiper-button-next.swiper-button-disabled {
+  opacity: 0.5;
+}
+
+.testimonials-slider .swiper .swiper-button-prev::after {
+  display: none;
+}
+html{
+  scroll-behavior: smooth !important;
+}
+::selection{
+  background-color: black;
+  color: white;
+}

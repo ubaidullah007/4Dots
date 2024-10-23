@@ -1,0 +1,11 @@
+
+.TalentCard:hover h5 , .TalentCard:hover p {
+    color: white;
+}
+.TalentCard:hover button{
+    background-color: white;
+    color: #000;
+}
+.TalentCard{
+    transition-duration: .5s;
+}

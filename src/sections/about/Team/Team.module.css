@@ -1,0 +1,41 @@
+.ceoMsg {
+    max-width: 450px;
+    background: #02010F;
+    border-radius: 16px 16px 16px 0px;
+    padding: 25px 30px;
+    position: relative;
+    /* max-height: 244px; */
+}
+
+.ceoMsg::before {
+    content: '';
+    width: 35px;
+    height: 35px;
+    background: #272829;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    top: -47px;
+}
+
+.ceoMsg::after {
+    content: '';
+    width: 81px;
+    background-repeat: no-repeat;
+    height: 40px;
+    background: #272829;
+    position: absolute;
+    background-size: cover;
+    left: 123px;
+    bottom: -40px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transform: rotate(-25deg);
+
+}
+
+@media (max-width:767px){
+    .ceoMsg::after {
+        left: 50px;
+    }
+}

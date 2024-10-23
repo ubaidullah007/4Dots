@@ -1,0 +1,17 @@
+.ExelenceWrapper {
+  border-radius: 24px;
+  padding: 60px 60px 80px 60px;
+  background: black;
+  box-shadow: -12.116182327270508px 36.34854507446289px 84.81327056884766px 0px
+    #dbdee166;
+}
+.ratingSection {
+  position: relative;
+  margin: 0 auto;
+}
+.ratingText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

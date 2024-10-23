@@ -1,0 +1,23 @@
+.footerWrapper {
+    background: #02010F;
+    padding: 200px 0 0 0;
+}
+
+.socialICons li a {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #cccccc59;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;    
+    transform: .5s all ease-in-out;
+}
+
+.socialICons li a:hover {
+    border: 2px solid #272829;
+}
+.socialICons li a:hover svg path {
+    border: 2px solid #272829;
+    fill: #272829;
+}

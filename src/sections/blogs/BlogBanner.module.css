@@ -1,0 +1,22 @@
+.careerBannerWrapper {
+    background: url(../../images/purpleShapeBg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.inputField {
+    border: 1px solid #FFFFFF33;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12));
+    padding: 15px;
+    outline: 0;
+    color: #FCFCFC;
+}
+
+.inputField::placeholder {
+    color: #FCFCFC;
+    font-weight: 300;
+}
+
+

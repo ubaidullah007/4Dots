@@ -1,0 +1,39 @@
+.blueCirle {
+    width: 48px;
+    height: 48px;
+    background: #272829;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: -60px;
+}
+
+.imageSection::before {
+    content: '';
+    background: url(../../../images/blueshape.png);
+    position: absolute;
+    height: 140px;
+    width: 117px;
+    z-index: 1;
+    top: -60px;
+    left: -60px;
+    filter: grayscale();
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.processContent{
+    position: relative;
+}
+.processContent::before {
+    content: '';
+    background: url(../../../images/dottedLine.svg);
+    position: absolute;
+    width: 50px;
+    background-repeat: no-repeat;
+    height: 96.5%;
+    left: 18px;
+    z-index: -1;
+    top: 0px;
+    background-size: cover;
+}

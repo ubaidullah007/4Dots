@@ -1,0 +1,20 @@
+.contactFormWrapper{
+    background: #f4f4fab7;
+    padding-top: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.contactCheckboxes{
+    border-right: 1px dashed gray;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.contactCheckboxes {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+.contactCheckboxes::-webkit-scrollbar { 
+    display: none;  
+}
+
+

@@ -1,0 +1,61 @@
+.processWrapper {
+    padding: 100px 0;
+}
+
+.linksSection {
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    gap: 24px;
+    position: relative;
+}
+
+.linksSection p:hover {
+    color: #272829;
+}
+
+.linksSection p:hover + .blueCircle {
+    background: #272829;
+}
+
+.blueCircle {
+    width: 12px;
+    height: 12px;
+    background: #E6E6E6;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.linksSection::after {
+    content: '';
+    background: url(../../../images/services/dottedline.svg);
+    position: absolute;
+    height: 66%;
+    width: 2px;
+    right: 5px;
+    top: 26px;
+}
+
+.linksSection:last-child::after {
+    content: '';
+    background: none;
+}
+
+
+
+.contentCard {
+    box-shadow: -10px 30px 70px 0px #DBDEE166;
+    padding: 44px;
+    border-radius: 20px;
+    transition: all .8s ease;
+}
+
+.cardAnimation {
+    transform: translateX(6px);
+}
+
+@media (max-width:767px){
+    /* .linksSection {
+        justify-content: start;
+    } */
+}
